@@ -1,0 +1,31 @@
+<% if(!person) { %>
+    <li>
+        <a href="/login">Login</a>
+    </li>
+    <li>
+        <a href="/register">Register</a>
+    </li>
+
+    <% } else { %>
+
+
+        <li>
+            <a href="/profile">
+                <%= person._name %>
+            </a>
+        </li>
+        <li>
+            <a href="/logout">logout</a>
+        </li>
+
+
+        <% } %>
+            <li>
+                <a href="/">Home</a>
+            </li>
+            <li>
+                <a href="/upload">Upload Product</a>
+            </li>
+            <li>
+                <a href="/cart">My Cart</a>
+            </li>
